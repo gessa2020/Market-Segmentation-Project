@@ -25,9 +25,8 @@ I just wanted to get my hands dirty with customer segmentation, so i went to kag
  These include:'Customer Id', 'Age', 'Edu', 'Years Employed', 'Income', 'Card Debt','Other Debt', 'Defaulted', 'DebtIncomeRatio'
 
 ## Data tranformation and cleaning.
-1.  I had to first dropped the 'unnamed 0' column since it was not meaningful for our project.
+1.  I had to first drop the 'unnamed 0' column since it was not meaningful for our project.
 3.  There was some missing data in the defaulted variable, so i filled it in with the median for that column.
-
 
 ## Data Analysis and Visualization
 Graph showing distribution of individual numerical variables![](IMAGES/Histogram_image1.png)
@@ -38,7 +37,7 @@ Graph showing distribution of individual numerical variables![](IMAGES/Histogram
 - The highest number of clients have education in category 1.0
 
 Graph showing Generated Clusters![](IMAGES/cluster_image.png)
-### Cluster building
+## Cluster building
 To perform clustering, we had to reprocess the data using principle component analysis algorithm to produce two principle componets as our dimensions to be used in the clustering. Further anlysis was performed to find the ideal number of clusters to be used in our data.
 We considered the ideal number of clusters to be used as 3 that can be seen in the graph above.
 
@@ -60,7 +59,7 @@ The best performing model was saved for use in the streamlit application
 ## Model Deployment
 Streamlit Application user interface![](IMAGES/streamlitapp.jpg)
 
-### Conclussions
+## Conclussions
 
 1. The clusters generated give us some useful information about our customer base such as their average income,
    age,debt to income ratio, education and years employed. 
