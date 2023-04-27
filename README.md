@@ -52,24 +52,24 @@ Having performed some statistics on the generated clusters, we can draw the foll
 ## Final Model buiding and Evaluation
 Model performance graph![](IMAGES/modal_image1.png)
 
-A range of models were trained on the data and their performance assessed as seen in the a bar graph above.
-The gradient boosting classifier and the Random forest model were the best performing classifer were the best performing  models.Further analysis was performed to know which of them was the better model and the Random forest emerged as slightly better than the grandient boosting model using comparing the performance of thier classification reports and confusion matrix. 
-The best performing model was saved for saved for use in the streamlit application
+A range of models were trained on the data and their performance assessed as seen in the bar graph above.
+The gradient boosting classifier and the Random forest model were the best performing classifers.
+Further analysis was performed to know which of them was the better model and the Random forest emerged as slightly better than the grandient boosting model by comparing the performance of thier classification reports and confusion matrices. 
+The best performing model was saved for use in the streamlit application
 
 ## Model Deployment
-Model performance graph![](IMAGES/Streamlit App.jpg)
+Streamlit Application user interface![](IMAGES/streamlitapp.jpg)
+
+### Conclussions
+
+1. The clusters generated give us some useful information about our customer base such as their average income,
+   age,debt to income ratio, education and years employed. 
+2. We can use the statistics about these clusters to know where each customer belongs to.
+3. With this information, we can then be able to tailor our bank products such as savings, loans, mortgage
+   credit card to specific customers depending on the cluster they belong to for better results.
 
 
 
-## Conclussions and Recommendations
-### Conclusion
-
-1. We can see that just like in 2016, the best selling product is still the savings product and therefore more emphasis in form of marketing should be put in selling this product to increase on the product uptake.
-2. Unlike in 2016 where the least consumed product was mortgage, 2017 prediction results show that pension will be the least consumed product.
-3. From the Prediction results, we also see that mortgage becomes the next consumed product after savings. 
-
-### Final Remarks
-Given more time, Since the constraint given was to contact the customers to sell them only one product and you can not select all of them, We may need to explore the contact channel and their effectiveness to be able to select the best channel to use according to their profitability, and also select which product will be sold to a given customer.
 
 
 
