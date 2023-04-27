@@ -24,11 +24,11 @@ I just wanted to get my hands dirty with customer segmentation, so i went to kag
  The sample Dataset summarizes the usage behavior of about nearly 1000 active credit card holders during the last 6 months. The file is at a customer level with 10 behavioral variables.
  These include:'Customer Id', 'Age', 'Edu', 'Years Employed', 'Income', 'Card Debt','Other Debt', 'Defaulted', 'DebtIncomeRatio'
 
-## Data tranformation and cleaning.
+## Data transformation and cleaning.
 1.  I had to first drop the 'unnamed 0' column since it was not meaningful for our project.
 3.  There was some missing data in the defaulted variable, so i filled it in with the median for that column.
 
-## Data Analysis and Visualization
+## Data analysis and visualization
 Graph showing distribution of individual numerical variables![](IMAGES/Histogram_image1.png)
 ### key takes ways from the plot above
 - The average age of clients is about 35 years with the age distribution being fairly skewed to the right
@@ -47,7 +47,7 @@ Having performed some statistics on the generated clusters, we can draw the foll
 3. Cluster 0 has a moderate average income of about 9.7k and has the higest average age of 84 years. This can be a target cluster for bank products such as pension
 
 
-## Final Model buiding and Evaluation
+## Final model buiding and evaluation
 Model performance graph![](IMAGES/modal_image1.png)
 
 A range of models were trained on the data and their performance assessed as seen in the bar graph above.
@@ -55,7 +55,7 @@ The gradient boosting classifier and the Random forest model were the best perfo
 Further analysis was performed to know which of them was the better model.The Random forest emerged as the slightly better model by comparing the performance of thier classification reports and confusion matrices. 
 The best performing model was saved for use in the streamlit application.
 
-## Model Deployment
+## Model deployment
 Streamlit Application user interface![](IMAGES/streamlitapp.jpg)
 
 ## Conclussions
