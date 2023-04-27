@@ -38,31 +38,26 @@ Graph showing distribution of individual numerical variables![](IMAGES/Histogram
 - The highest number of clients have education in category 1.0
 
 Graph showing Generated Clusters![](IMAGES/cluster_image.png)
-### key takes ways from the plot above
-Three clusters were generated using two principle components 
+### Cluster building
+To perform clustering, we had to reprocess the data using principle component analysis algorithm to produce two principle componets as our dimensions to be used in the clustering. Further anlysis was performed to find the ideal number of clusters to be used in our data.
+We considered the ideal number of clusters to be used as 3 that can be seen in the graph above.
 
-Graph showing Models generated![](IMAGES/model_image1.png)
-From the generated clusters, we can draw the following conclusions
-1. 
+Graph showing cluster analysis with data![](IMAGES/clusterstat.jpg)
+Having performed some statistics on the generated clusters, we can draw the following conclusions
+1. Cluster 1 has the highest average income of about 13k and average age of 46 years.This can be considerd as a high value target cluster for banking products such as loans and savings.
+2. Cluster 2 has the least average income of about 9.4k and has the least average age of 29 years. This can be a target cluster for bank products such as mortgage and credit card
+3. Cluster 0 has a moderate average income of about 9.7k and has the higest average age of 84 years. This can be a target cluster for bank products such as pension
 
 
-### key Analysis find from 2016  data
-1. We saw that 38.85% of the bank customers bought the savings product.
-2. The percentage of customers who bought the pension product is 22.76%. 
-3. The least consumed product was mortgage accounts with 15.41%.
-4. The highest number of customers bought one product with a percentage of 45.06%. 
-5. The percentage of customers who bought several products are 15.39%.
+## Final Model buiding and Evaluation
+Model performance graph![](IMAGES/modal_image1.png)
 
-## Model buiding
-We used the gradient boosting model to build 3 classfiers to predict which product a customer would subscribe to. 
-we then used each of the individual classifiers to predict which product a new customer would subscribe to using the 
-2017 data as test data.
-### Results from modelling
-1. We can see that 26.42% of the new customers are predicted to buy the savings product
-2. The percentage of customers predicted to buy the mortgage product is 14.15% 
-3. The least consumed product was pension accounts with 5.19% of the bank customers
-4. The highest number of customers bought one product with a percentage of 37.74%
-5. The percentage of customers who bought several products are 3.99%
+A range of models were trained on the data and their performance assessed as seen in the a bar graph above.
+The gradient boosting classifier and the Random forest model were the best performing classifer were the best performing  models.Further analysis was performed to know which of them was the better model and the Random forest emerged as slightly better than the grandient boosting model using comparing the performance of thier classification reports and confusion matrix. 
+The best performing model was saved for saved for use in the streamlit application
+
+## Model Deployment
+Model performance graph![](IMAGES/Streamlit App.jpg)
 
 
 
