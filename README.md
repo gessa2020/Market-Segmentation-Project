@@ -1,78 +1,50 @@
 # Market Segmentation End to End Machine Learning with deployment Project
 
-# Promoting financial products to bank customers
-![](IMAGES/Image1.jpg)
+## Bank customer Segmenation for effective design of marketing strategies.
+![](IMAGES/cover_image.jpg)
 ## Introduction
-In 2016, a retail bank sold several products (mortgage account, savings account, and pension account) to its customers. It kept a record of all historical data, and this data is available for analysis and reuse. Following a merger in 2017, the bank has new customers and wants to launch some marketing campaigns.
-
-The budget for the campaigns is limited. The bank wants to contact a customer and propose only one product
-
-__The marketing department needs to decide:__
-
-- Who should be contacted?
-- Which one of the products should be proposed?
-- Will such campaigns be profitable?
+Customer segmentation is one of those important aspects that a business has to carefully consider before formulating products or services to it's customer base. Therefore pitching the right message to the right customer and at the right time has been the objective for all banks.Banks look at customer segmentation to gain insight, on how to decide on specific offers, improve customer service, and understand customer behaviour & more. The success or failure of a marketing campaign depends on how customers are segmented. Based on the customer segmentation, banks unleash product recommendations like saving plans, loans, wealth management, etc. on target customer groups.
 
 ##  Problem statement 
-__Given a set of bank products,predict which product would be consumed by a customer__
+__How can we segment our customer base to improve cross-selling opportunities?__
 
-<h3>Objective</h3>
-Our assignment is to develop classification models which we use to predict which among the given set of products
-a customer would subscribe to. 
+<h3>Objective</h3> 
+To segment and analysis bank customers so as to understand the kind of clients a bank has which can then be used in developing profitable products that can generate more revenue to the bank. 
  
-<h4>Classification workflow</h4>
-From the historical data, we can train a machine learning product-based classification model on customer profile variables to predict a product category that a customer would take up, we can base on that information to know if a customer would subscribe to a <b> mortgage </b> , <b> savings</b>, or <b> pension</b> account.
-
-You can apply this classification model to new customer data to predict a product that would they subscribe to. 
-Using this prediction, you can decide which offers are proposed and Which product is offered to which customer.The solutions can be displayed, compared, and analyzed.
+<h4>Workflow</h4>
+From the historical data, we will first train a machine learning clustering  model on customer profile variables to come up with target groups also known as clusters, there after, we will then train a classification model that ca predict which cluster a customer belongs to so as to tailor specific products to the client depending on the charactistics of the cluster.
 
 ## Skilled demonstrated.
-- Python was used for coding the project as well as use of some data science algorithms
+- Python was used for coding the project as well as some data science algorithms
 - I used jupyter notebooks as the main IDE for coding
+- I used Visual Studio to develop and deploy the streamlit application
 
 ## Data sourcing
-I got access to the data to address the stated problem above from a github repository.
-The dataset contains 23 numerical columns namely:
-
-'customer_id', 'age', 'age_youngest_child', 'debt_equity', 'gender','bad_payment', 'gold_card', 'pension_plan',
- 'household_debt_to_equity_ratio', 'income', 'members_in_household','months_current_account', 'months_customer', 'call_center_contacts','loan_accounts', 'number_products', 'number_transactions','non_worker_percentage', 'white_collar_percentage', 'rfm_score','Mortgage', 'Pension', 'Savings', 'nb_products'.
-
-Click <a href="https://raw.githubusercontent.com/vberaudi/utwt/master/unknown_behaviors.csv">HERE</a> to access 
-the 2016 raw data.
-
-You can also click <a href="https://raw.githubusercontent.com/vberaudi/utwt/master/unknown_behaviors.csv">HERE</a> to 
-access the 2017 raw data.
+I just wanted to get my hands dirty with customer segmentation, so i went to kaggle.com and and got my hands on to this  <a href="https://www.kaggle.com/datasets/sidharth178/customer-segmentation">Dataset</a> so as to practice my skills. 
+ The sample Dataset summarizes the usage behavior of about nearly 1000 active credit card holders during the last 6 months. The file is at a customer level with 10 behavioral variables.
+ These include:'Customer Id', 'Age', 'Edu', 'Years Employed', 'Income', 'Card Debt','Other Debt', 'Defaulted', 'DebtIncomeRatio'
 
 ## Data tranformation and cleaning.
 1.  I had to first dropped the 'unnamed 0' column since it was not meaningful for our project.
-2.  I removed duplicated data from the dataset 
-3.  There was no missing data so imputation was performed
-4.  For purposes of creating meaningful visualizations, we encoded the gender column into male and female values
-5.  We also encoded other categorical values into Yes and NO values to create meaningful visualizations
+3.  There was some missing data in the defaulted variable, so i filled it in with the median for that column.
+
 
 ## Data Analysis and Visualization
-Graph showing distribution of individual numerical variables![](IMAGES/numerical_visuals.png)
+Graph showing distribution of individual numerical variables![](IMAGES/Histogram_image1.png)
 ### key takes ways from the plot above
-- We have some variables that are fairly normally distributed and those which are highly skewed.
-- Variables like age,income,debt_equity,household_debt_to_equity_ratio are fairly normally distributed
-- Variables like age_of_youngest_child,months_current_account are fairly skewed.
-- Variables such as number_of_products,number_of_transactions,loan_accounts,months_customer, members_in_household are highly skewed.
+- The average age of clients is about 35 years with the age distribution being fairly skewed to the right
+- Income and Card Debt are highly skewed to the right
+- Debt income ratio and years employed have distributions that are skewed to the right.
+- The highest number of clients have education in category 1.0
 
-Graph showing distribution of individual Categorical variables![](IMAGES/categorical_visuals.png)
+Graph showing Generated Clusters![](IMAGES/cluster_image.png)
 ### key takes ways from the plot above
-1. Among the three products the bank is selling, the most consumed product is Savings, followed by Pension and the least is Mortgage.
-2. There is almost an equal number of males customers compared to female customers
-3. There are negligible cases of bad payment from customers who consume loans
-4. The gold card service is one which has not been taken up my majority of the customers.
+Three clusters were generated using two principle components 
 
-Graph showing Bivariate plots between variables![](IMAGES/bivariate_visuals.png)
-### key takes ways from the plot above in regards to mortgage, savings and pension
-1. Customers with no loan accounts are the highest subscribers to savings and the number of subscribers to savings
-account generally decreases with increase in loan accounts
-2. Customer who have 2 or more members in thier household generally subscribe to the savings account
-3. Customers who subcribe to the mortgage account generally increase with increase in the members of thier household
-4. Just like mortgage, the most customers who subscribed to pension accounts have no loan accounts and they decrease
-with increase in loan accounts.
+Graph showing Models generated![](IMAGES/model_image1.png)
+From the generated clusters, we can draw the following conclusions
+1. 
+
 
 ### key Analysis find from 2016  data
 1. We saw that 38.85% of the bank customers bought the savings product.
