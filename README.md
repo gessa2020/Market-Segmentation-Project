@@ -12,10 +12,10 @@ __How can we segment our customer base to improve cross-selling opportunities?__
 To segment and analysis bank customers so as to understand the kind of clients a bank has which can then be used in developing profitable products that can generate more revenue to the bank. 
  
 <h4>Workflow</h4>
-From the historical data, we will first train a machine learning clustering  model on customer profile variables to come up with target groups also known as clusters, there after, we will then train a classification model that ca predict which cluster a customer belongs to so as to tailor specific products to the client depending on the charactistics of the cluster.
+From the historical data, we will first train a machine learning clustering  model on customer profile variables to come up with target groups also known as clusters, there after, we will then train a classification model that can predict which cluster a customer belongs to so as to tailor specific products to the client depending on the charactistics of the cluster.
 
 ## Skilled demonstrated.
-- Python was used for coding the project as well as some data science algorithms
+- Python was used for coding the project together with some data science algorithms as seen in the notebook
 - I used jupyter notebooks as the main IDE for coding
 - I used Visual Studio to develop and deploy the streamlit application
 
