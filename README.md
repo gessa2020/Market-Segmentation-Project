@@ -38,8 +38,7 @@ Graph showing distribution of individual numerical variables![](IMAGES/Histogram
 
 Graph showing Generated Clusters![](IMAGES/cluster_image.png)
 ## Cluster building
-To perform clustering, we had to reprocess the data using principle component analysis algorithm to produce two principle componets as our dimensions to be used in the clustering. Further anlysis was performed to find the ideal number of clusters to be used in our data.
-We considered the ideal number of clusters to be used as 3 that can be seen in the graph above.
+To perform clustering, we had to preprocess the data using principle component analysis algorithm to produce two principle componets as our dimensions to be used in the clustering process.These were used to generate the clusters as seen in the image above. Further anlysis was performed to find the ideal number of clusters to be used in our data.We considered the ideal number of clusters to be used as 3 that can be seen in the graph above.
 
 Graph showing cluster analysis with data![](IMAGES/clusterstat.jpg)
 Having performed some statistics on the generated clusters, we can draw the following conclusions
@@ -53,8 +52,8 @@ Model performance graph![](IMAGES/modal_image1.png)
 
 A range of models were trained on the data and their performance assessed as seen in the bar graph above.
 The gradient boosting classifier and the Random forest model were the best performing classifers.
-Further analysis was performed to know which of them was the better model and the Random forest emerged as slightly better than the grandient boosting model by comparing the performance of thier classification reports and confusion matrices. 
-The best performing model was saved for use in the streamlit application
+Further analysis was performed to know which of them was the better model.The Random forest emerged as the slightly better model by comparing the performance of thier classification reports and confusion matrices. 
+The best performing model was saved for use in the streamlit application.
 
 ## Model Deployment
 Streamlit Application user interface![](IMAGES/streamlitapp.jpg)
@@ -65,7 +64,7 @@ Streamlit Application user interface![](IMAGES/streamlitapp.jpg)
    age,debt to income ratio, education and years employed. 
 2. We can use the statistics about these clusters to know where each customer belongs to.
 3. With this information, we can then be able to tailor our bank products such as savings, loans, mortgage
-   credit card to specific customers depending on the cluster they belong to for better results.
+   credit card to specific customers depending on the cluster they belong to for better performance of marketing     campaigns.
 
 
 
