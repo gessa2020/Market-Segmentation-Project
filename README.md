@@ -58,7 +58,7 @@ The best performing model was saved for use in the streamlit application.
 ## Model deployment
 Streamlit Application user interface![](IMAGES/streamlitapp.jpg)
 
-## Conclussions
+## Conclussion
 
 1. The clusters generated give us some useful information about our customer base such as their average income,
    age,debt to income ratio, education and years employed. 
