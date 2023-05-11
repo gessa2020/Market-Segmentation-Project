@@ -14,10 +14,10 @@ To segment and analysis bank customers so as to understand the kind of clients a
 <h4>Workflow</h4>
 From the historical data, we will first train a machine learning clustering  model on customer profile variables to come up with target groups also known as clusters, there after, we will then train a classification model that can predict which cluster a customer belongs to so as to tailor specific products to the client depending on the charactistics of the cluster.
 
-## Skilled demonstrated.
+## Skills demonstrated.
 - Python was used for coding the project together with some data science algorithms as seen in the notebook
 - I used jupyter notebooks as the main IDE for coding
-- I used Visual Studio to develop and deploy the streamlit application
+- I used Visual Studio code to develop and deploy the streamlit application
 
 ## Data sourcing
 I just wanted to get my hands dirty with customer segmentation, so i went to kaggle.com and and got my hands on to this  <a href="https://www.kaggle.com/datasets/sidharth178/customer-segmentation">Dataset</a> so as to practice my skills. 
@@ -30,7 +30,7 @@ I just wanted to get my hands dirty with customer segmentation, so i went to kag
 
 ## Data analysis and visualization
 Graph showing distribution of individual numerical variables![](IMAGES/Histogram_image1.png)
-### key takes ways from the plot above
+### key take ways from the plot above
 - The average age of clients is about 35 years with the age distribution being fairly skewed to the right
 - Income and Card Debt are highly skewed to the right
 - Debt income ratio and years employed have distributions that are skewed to the right.
